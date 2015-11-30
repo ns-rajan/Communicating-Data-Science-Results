@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sivarajan - Communicating-Data-Science-Results - Assignment 1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+</head>
+
+<body>
+
+  <div id="notebook">
+    <div id="notebook-container">
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Communicating-Data-Science-Results">Crime Analytics: Visualization of Incident Reports</h1>
+
+<p>For <em><a href="https://www.coursera.org/learn/data-results/">Communicating Data Science Results </a> course by <a href="https://github.com/ns-rajan/Communicating-Data-Science-Results">Sivarajan Napoleon</a></em></p>
+<p>This assignment is part of the Communicating Data Science Results Coursera MOOC course conducted by Univ of Washington</p>
+
+<p>The intent of this assignment is to analyze criminal incident data from San Francisco, visualize patterns and, if possible, contrast and compare the patterns.</p>
+
+<p>The end result of this assignment is to produce a blog-post-style visual narrative consisting of a series of visualizations interspersed with sufficient descriptive text to make a convincing argument. </p>
+
+<h2 id="Assignment-Questions">Assignment Questions<a class="anchor-link" href="#Assignment-Questions">&#182;</a></h2>
+<p>The basic questions fathomed for this assignment and the possible Visual answers for those questions are in narrative presented below.</p>
+<em>San Francisco</em>
+<ul>
+<li>What are the incidents?</li>
+<li>What is the resolution for the incidents?</li>
+<li>When did the incident happen?</li>
+<li>Where did it Happen?</li>
+</ul>
+
+<p>R-Studio Version 0.98.994 with the libraries ggplot2, devtools and others were used for this assignment. The crimeanalytics.html was created by-hand, typed out in TextPad and rendered as a PDF using NitroPDF. <https://github.com/ns-rajan/Communicating-Data-Science-Results>Github</a> is used for hosting the results and narrative.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Primary-Finding">Primary Finding<a class="anchor-link" href="#Primary-Finding"></a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The Answers to the questions has been visualized using Plots and Graphs, and the findings per city are as below.</p>
+<em>San Francisco</em>
+<ul>
+<li>LARCENY/THEFT is the highest reported incident.</li>
+<li>Apart from no resolution, ARREST, BOOKED is the most occured resolution.</li>
+<li>The incidents mostly concentrate in the evenings and late hours</li>
+<li>Larceny/theft and Warrants are more predominant in the bay area.</li>
+</ul>
+
+</div>
+</div>
+</div>
+
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Data-Summary">Data Summary<a class="anchor-link" href="#Data-Summary">&#182;</a></h2><p>The data as visualized in RStudio paints an interesting picture, some of the main takeaway points:</p>
+<em>San Francisco</em>
+<ul>
+<li>Over a Summer, in San Francisco around 28K crime incidents have been reported.</li>
+<li>The crime incidents have been categorized, and listed with the resolution if any.</li>
+<li>The district, lat-long location and incident time are also listed.</li>
+</ul>
+
+</div>
+</div>
+</div>
+
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Speed-and-Distance">What are the incidents?</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The First question about Crime Analytics is "What are the incidents?"<br>
+The Dataset variables Category, Descript and Resolution have to be analyzed to get the answers.<br>
+The highest frequency incident is Larceny/theft with 9,466, followed by Other Offenses (3,567) and Non-criminal (3,023).<br>
+</p>
+<img src="SF-What.png">
+
+</div>
+</div>
+</div>
+
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Speed-and-Distance">What is the resolution for the incidents?</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>In Crime Analytics when  you know the type of incidents and their frequency, you want to know "What is the resolution for the incidents?"<br>
+The variable Resolution has 16 different levels.<br>
+The top resolution of incidents is None with 19,139, followed by Arrest, Booked (6,502) and Arrest, Cited (1,419).<br>
+</p>
+<img src="SF-Resolution.png">
+
+</div>
+</div>
+</div>
+
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Speed-and-Distance">When did the incident happen?</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The third question we want to know in Crime Analytics is "When did the incident happen?"<br>
+We puruse the data from DayOfWeek, Date and Time for the When Question.<br>
+The Day of the Week and the Hour provide most typical hours when the incidents happen.<br>
+During the week days the incidents occur more in the evenings (from 17 to 18 hours, to 20 hours, and a smaller concentration around 12 hours).<br>
+From Friday to the weekends, crime is concentrated in the evening and then at late hours, around 23 hours.<br>
+<br>
+We could continue analysis by investigating the incidents by category or resolution as well as with location.</p>
+<img src="SF-When.png">
+
+
+</div>
+</div>
+</div>
+
+
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Speed-and-Distance">Where did it Happen?</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We always want to check "Where did it Happen?", the most crime-prone area.<br>
+Variables used to study this question are PdDistrict, Address, X and Y and Location.<br>
+<br>
+Since the Lat-Long are available, it is possible to identify precisely the location of the incidents and relate to categories and periods. Larceny/theft and  Warrants are more predominant in the bay area, while Vehicle Theft are spread all across the city.<br>
+
+<img src="SF-Where.png">
+</p>
+
+</div>
+</div>
+</div>
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Speed-and-Distance">SUMMARY</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>
+To summarize, we analyzed the Crime incidents in San Francisco over the Summer of 2014. The number of incidents, type of incidents, their frequency, when do they happen most and where do they happen were all visually analyzed. We could do the same for the Seattle Data, using different Variable names.
+<br>
+</p>
+
+</div>
+</div>
+</div>
+
+</body>
+</html>
